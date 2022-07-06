@@ -1,0 +1,312 @@
+ul.horizontal {
+    grid-row: 1 / 1;
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#ebb434 ;
+    width:100%;
+    font-family: myFirstFont;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+ul.horizontal li {
+    float: left;
+}
+
+ul.horizontal li a.active{
+    background-color: #EEEEEE;
+}
+
+ul.horizontal li a {
+    display: inline-block;
+    color: #EEE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#searchbar{
+    position: absolute;
+    top: 1.2%;
+    right: 2%;
+    background-color: #ebb434;
+    color: #EEEEEE;
+    padding-left:15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 50px;
+    font-family: myFirstFont;
+    size: 4;
+}
+
+#searchbar:hover{
+    background-color: black;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Exo2-Bold.ttf);
+}
+
+@font-face {
+    font-family: fontTitle;
+    src: url(../fonts/Exo2-Light.ttf);
+}
+
+.card{
+    background-color: #327cdb;
+    width: 100%;
+    box-shadow: 0px 7px 10px #61605e;
+    
+}
+
+.column {
+    float: left;
+    width: 17%;
+    padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.note {
+    background-color: #EEEEEE;
+    border-radius: 10%;
+    width: 23px;
+    font-family: myFirstFont;
+    text-align: center;
+    margin-left: 85%;
+    color: black;
+}
+
+b{
+    font-family: fontTitle;
+}
+
+.container {
+    display: block;
+    margin: 10px;
+    justify-content: center;
+    align-content: flex-start;
+    position:relative;
+    color: #EEE;
+}
+
+
+@keyframes textup{
+    0%{
+        transform: translateY(50px);
+    }   
+}
+
+textarea{
+    position: absolute;
+    font-family: myfirstFont;
+}
+
+.overlay {
+    position:absolute;
+    top: 7.5%;
+    left: 4.25%;
+    width: 198px;
+    height: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card1:hover .overlay {
+    opacity: 1;
+    animation: textup 0.75s;
+}
+
+.overlay2 {
+    position:absolute;
+    top: 7.5%;
+    left: 22.3%;
+    width: 197px;
+    height: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card2:hover .overlay2 {
+    opacity: 1;
+    animation: textup 0.75s;
+}
+
+.overlay3 {
+    position:absolute;
+    top: 7.5%;
+    left: 40.2%;
+    width: 198px;
+    height: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card3:hover .overlay3 {
+    opacity: 1;
+    animation: textup 0.75s;
+}
+
+.overlay4 {
+    position:absolute;
+    top: 7.5%;
+    left: 58.2%;
+    width: 198px;
+    height: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card4:hover .overlay4 {
+    opacity: 1;
+    animation: textup 0.75s;
+}
+
+.overlay5 {
+    position:absolute;
+    top: 7.5%;
+    left: 76.2%;
+    width: 197px;
+    height: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card5:hover .overlay5 {
+    opacity: 1;
+    animation: textup 0.75s;
+}
+
+.overlay6 {
+    position:absolute;
+    top: 49%;
+    left: 18%;
+    width: 169px;
+    height: 120px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card6:hover .overlay6 {
+    opacity: 1;
+    animation: textup 0.75s;
+}
+
+.overlay7 {
+    position:absolute;
+    top: 49%;
+    left: 33.6%;
+    width: 169px;
+    height: 120px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card7:hover .overlay7 {
+    opacity: 1;
+    animation: textup 0.75s;
+}
+
+.overlay8 {
+    position:absolute;
+    top: 49%;
+    left: 49.3%;
+    width: 169px;
+    height: 100px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card8:hover .overlay8 {
+    opacity: 1;
+    animation: textup 0.75s;
+}
+
+.overlay9 {
+    position:absolute;
+    top: 49%;
+    left: 64.9%;
+    width: 169px;
+    height: 110px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card9:hover .overlay9 {
+    opacity: 1;
+    animation: textup 0.75s;
+}
+
+.overlay10 {
+    position:absolute;
+    top: 70.8%;
+    left: 36.6%;
+    width: 130px;
+    height: 100px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card10:hover .overlay10 {
+    opacity: 1;
+    animation: textup 0.75s;
+}
+
+.overlay11 {
+    position:absolute;
+    top: 70.8%;
+    left: 49%;
+    width: 130px;
+    height: 100px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #EEEEEE;
+    color: black;
+    resize: none;
+}
+  
+.card11:hover .overlay11 {
+    opacity: 1;
+    animation: textup 0.75s;
+}

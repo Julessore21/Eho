@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's Date</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head> 
+<script>
+    function search_posts() {
+        let input = document.getElementById('searchbar').value
+        input=input.toLowerCase();
+        let x = document.getElementsByClassName('card');
+        
+        for (i = 0; i < x.length; i++) { 
+            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display="none";
+            }
+            else {
+                x[i].style.display="list-item";                 
+            }
+        }
+    }
+</script>
+<body style="background-color: #EEE " display="grid">
+    <ul class="horizontal">
+        <li class="nav-item active">
+            <a href="file:///home/julessore/workspace/base_test/base_test/index.html">Acceuil</a>
+            <input id="searchbar" onkeyup="search_posts()" type="text"
+            name="search" placeholder="Rechercher">  
+        </li>
+        <!-- input tag -->
+       
+    </ul>
+    
+    <ol class="posts">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="card1">
+                        <img src="picture/0.jpg" alt="image" style="width: 100%;">
+                        <div class="container">
+                            <h4>
+                                <div class="row">
+                                    <b id="title1"></b>
+                                    <div class="note" id="note1"></div>
+                                </div>
+                            </h4>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay" id="text1">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card2">   
+                        <img src="picture/9.jpg" alt="image" style="width: 100%;">
+                        <div class="container">
+                            <h4>
+                                <div class="row">
+                                    <b id="title2"></b>
+                                    <div class="note" id="note2"></div>
+                                </div>
+                            </h4>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay2" id="text2">
+                        </textarea>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="card3">
+                        <img src="picture/2.jpg" alt="image" style="width: 100%;">
+                        <div class="container">
+                            <h4>
+                                <div class="row">
+                                    <b id="title3"></b>
+                                    <div class="note" id="note3"></div>
+                                </div>
+                            </h4>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay3" id="text3">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card" id="card4">
+                    <div class="card4">
+                        <img src="picture/6.jpg" alt="image" style="width: 100%;">
+                        <div class="container">
+                            <h4>
+                                <div class="row">
+                                    <b id="title4"></b>
+                                    <div class="note" id="note4"></div>
+                                </div>
+                            </h4>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay4" id="text4">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="card5">
+                        <img src="picture/4.jpg" alt="image" style="width: 100%;">
+                        <div class="container">
+                            <h4>
+                                <div class="row">
+                                    <b id="title5"></b>
+                                    <div class="note" id="note5"></div>
+                                </div>
+                            </h4>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay5" id="text5">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 14%;">
+            <div class="column">
+                <div class="card">
+                    <div class="card6">
+                        <img src="picture/5.jpg" alt="image" style="width: 100%;">
+                        <div class="container" id="card6">
+                            <h4>
+                                <div class="row">
+                                    <b id="title6"></b>
+                                    <div class="note" id="note6"></div>
+                                </div>
+                            </h4>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay6" id="text6">
+                        </textarea>
+                    </div>    
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card7">
+                        <img src="picture/1.jpg" alt="image" style="width: 100%;">
+                        <div class="container" id="card7">
+                            <h4>
+                                <div class="row">
+                                    <b id="title7"></b>
+                                    <div class="note" id="note7"></div>
+                                </div>
+                            </h4>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay7" id="text7">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="card8">
+                        <img src="picture/7.jpg" alt="image" style="width: 100%;">
+                        <div class="container">
+                            <row>
+                                <div class="row">
+                                    <b id="title8"></b>
+                                    <div class="note" id="note8"></div>
+                                </div>
+                            </row>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay8" id="text8">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="card9">
+                        <img src="picture/8.jpg" alt="image" style="width: 100%;">
+                        <div class="container">
+                            <h4>
+                                <div class="row">
+                                    <b id="title9"></b>
+                                    <div class="note" id="note9"></div>
+                                </div>
+                            </h4>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay9" id="text9">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 33.5%;">
+            <div class="column">
+                <div class="card">
+                    <div class="card10">
+                        <img src="picture/3.jpg" alt="image" style="width: 100%;">
+                        <div class="container">
+                            <h4>
+                                <div class="row">
+                                    <b id="title10"></b>
+                                    <div class="note" id="note10"></div>
+                                </div>
+                            </h4>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay10" id="text10">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card11">
+                        <img src="picture/10.jpg" alt="image" style="width: 100%;">
+                        <div class="container">
+                            <h4>
+                                <div class="row">
+                                    <b id="title11"></b>
+                                    <div class="note" id="note11"></div>
+                                </div>
+                            </h4>
+                        </div>
+                        <textarea rows="6" cols="1" readonly class="overlay11" id="text11">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ol>
+    <script src="./js/json_input.js"></script>
+    </ul>
+</body>
+</html>
