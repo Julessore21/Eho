@@ -78,6 +78,7 @@ ul.horizontal li a {
     clear: both;
 }
 
+
 .note {
     background-color: #EEEEEE;
     border-radius: 10%;
@@ -116,7 +117,7 @@ textarea{
 
 .overlay {
     position:absolute;
-    top: 7.5%;
+    top: 9.1%;
     left: 4.25%;
     width: 198px;
     height: 300px;
@@ -143,7 +144,7 @@ body{
 
 .overlay2 {
     position:absolute;
-    top: 7.5%;
+    top: 9.1%;
     left: 22.3%;
     width: 197px;
     height: 300px;
@@ -161,7 +162,7 @@ body{
 
 .overlay3 {
     position:absolute;
-    top: 7.5%;
+    top: 9.1%;
     left: 40.2%;
     width: 198px;
     height: 300px;
@@ -179,7 +180,7 @@ body{
 
 .overlay4 {
     position:absolute;
-    top: 7.5%;
+    top: 9.1%;
     left: 58.2%;
     width: 198px;
     height: 300px;
@@ -197,7 +198,7 @@ body{
 
 .overlay5 {
     position:absolute;
-    top: 7.5%;
+    top: 9.1%;
     left: 76.2%;
     width: 197px;
     height: 300px;
@@ -215,7 +216,7 @@ body{
 
 .overlay6 {
     position:absolute;
-    top: 49%;
+    top: 50.8%;
     left: 18%;
     width: 169px;
     height: 120px;
@@ -233,7 +234,7 @@ body{
 
 .overlay7 {
     position:absolute;
-    top: 49%;
+    top: 50.8%;
     left: 33.6%;
     width: 169px;
     height: 120px;
@@ -251,7 +252,7 @@ body{
 
 .overlay8 {
     position:absolute;
-    top: 49%;
+    top: 50.8%;
     left: 49.3%;
     width: 169px;
     height: 100px;
@@ -269,7 +270,7 @@ body{
 
 .overlay9 {
     position:absolute;
-    top: 49%;
+    top: 50.8%;
     left: 64.9%;
     width: 169px;
     height: 110px;

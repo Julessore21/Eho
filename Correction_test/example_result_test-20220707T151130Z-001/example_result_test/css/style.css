@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Exo2-Regular';
+    src: url('../fonts/Exo2-Regular.woff');
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Exo2-Regular", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #FFC107;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 1rem;
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.search::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.search::-moz-placeholder {
+    color: #000000;
+}
+
+.search:-ms-input-placeholder {
+    color: #000000;
+}
+
+.search::-ms-input-placeholder {
+    color: #000000;
+}
+
+.search::placeholder {
+    color: #000000;
+}
+
+.search:focus {
+    background-color: #000000;
+    outline: none;
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.picture {
+    background-color: #167ABC;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 300px;
+}
+
+.picture img {
+    width: 100%;
+}
+
+.picture-info {
+    color: #eee;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.picture-info h3 {
+    margin: 0;
+}
+
+.picture-info span {
+    background-color: #167ABC;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+.picture-info span.green {
+    color: rgb(39, 189, 39);
+    background: white;
+}
+
+.picture-info span.orange {
+    color: orange;
+    background: white;
+}
+
+.picture-info span.red {
+    color: rgb(189, 42, 42);
+    background: white;
+}
+
+.explanation {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translateY(101%);
+        -ms-transform: translateY(101%);
+            transform: translateY(101%);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    -o-transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.explanation h3 {
+    margin-top: 0;
+}
+
+.picture:hover .explanation {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+}
