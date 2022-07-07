@@ -105,7 +105,8 @@ b{
 @keyframes textup{
     0%{
         transform: translateY(50px);
-    }   
+    }
+       
 }
 
 textarea{
@@ -129,6 +130,15 @@ textarea{
 .card1:hover .overlay {
     opacity: 1;
     animation: textup 0.75s;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: #EEE;
+    display: grid;
 }
 
 .overlay2 {
@@ -296,8 +306,8 @@ textarea{
 .overlay11 {
     position:absolute;
     top: 70.8%;
-    left: 49%;
-    width: 130px;
+    left: 49.1%;
+    width: 129px;
     height: 100px;
     opacity: 0;
     transition: .5s ease;

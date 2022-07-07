@@ -1,16 +1,15 @@
 package main
 
-
 import (
+	"database/sql"
 	"fmt"
 	"log"
-	"net/http"
-	"database/sql"
-	_ "github.com/lib/pq"
-	"net/http/cookiejar"
 	"math/rand"
-)
+	"net/http"
+	"net/http/cookiejar"
 
+	_ "github.com/lib/pq"
+)
 
 var dbConn *sql.DB
 var client http.Client
@@ -29,19 +28,19 @@ func init() {
 
 //Connexion à la base de donnée
 
-func getDBConn() (*sql.DB,error) {
-	
+func getDBConn() (*sql.DB, error) {
+
 	if dbConn != nil {
 		return dbConn, nil
 	}
-	
+
 	connStr := "user=julessore dbname=newdb sslmode=disable"
 	newdb, err := sql.Open("postgres", connStr)
-	
+
 	if err != nil {
 		return nil, err
 	}
-	
+
 	dbConn = newdb
 	return dbConn, nil
 }
@@ -54,7 +53,6 @@ func main() {
 
 	fmt.Printf("Starting server at port 8080\n")
 
-	
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		log.Fatal(err)
 	}
@@ -82,8 +80,7 @@ func randomString(len int) string {
 //Fonction d'affichage d'erreur
 
 func ErrorCheck(err error) {
-    if err != nil {
-        panic(err.Error())
-    }
+	if err != nil {
+		panic(err.Error())
+	}
 }
-
