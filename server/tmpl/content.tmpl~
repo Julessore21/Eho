@@ -1,0 +1,5 @@
+{{define "content"}}
+    {{range .session}}
+        <p>{{.}}</p>
+    {{end}}
+{{end}}

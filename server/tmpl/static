@@ -1,0 +1,21 @@
+{{define "account"}}<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site Web statique</title>
+  </head>
+    <body>
+      <h2>BIENVENUE !</h2>
+      <div>
+	<form method="GET" action="/index.html">
+	  <label>Nom d'utilisateur</label><input name="name" type="text" value="{{.Name}}" />
+	  <label>Mot de passe</label><input name="mdp" type="text" value="{{.Mdp}}" />
+	  <label>Addresse</label><input name="address" type="text" value="{{.Address}}" />
+	  <label>Numéro de téléphone</label><input name="phone" type="int" value="{{.Phone}}" />
+	  <label>Addresse Email</label><input name="mail" type="text" value="{{.Mail}}" />
+	  <label>Date de naissance</label><input name="birth" type="int" value="{{.Birth}}" />
+	  <input type="submit" value="Confirmer la modification" />
+	</form>
+      </div>
+    </body>
+</html>
+{{end}}

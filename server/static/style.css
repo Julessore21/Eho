@@ -1,0 +1,114 @@
+
+body {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Righteous", cursive;
+    min-height: 100vh;
+    background-color: #08D9D6;
+    background-image: linear-gradient(180deg,#EAEAEA  0%, #252A34 100%);
+}
+
+form {
+    grid-row: 2 / 2;
+    margin:auto;
+    display: flex;
+}
+
+textarea[id=story] {
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    background: #EAEAEA;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+div.allposts{
+    margin-top:10%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+
+input[type=text] {
+     margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 75px;
+    background: #EAEAEA;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+input[type=int] {
+     margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 75px;
+    background: #EAEAEA;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+input[type=submit] {
+    background-image: linear-gradient(to right, #08D9D6 0%, #96DEDA  51%, #08D9D6  100%);
+    margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    
+    
+}
+
+h2 {
+    font-size: 2em;
+    margin: auto;
+}
+
+
+ul.horizontal {
+    grid-row: 1 / 1;
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width:100%;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+ul.horizontal li {
+    float: left;
+}
+
+ul.horizontal li a.active{
+    background-color: #EEEEEE;
+}
+
+ul.horizontal li a {
+    display: inline-block;
+    color: #EEE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

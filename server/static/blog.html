@@ -1,0 +1,29 @@
+{{define "blog.html"}}<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site Web statique</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+  </head>
+  <body style="background-color:#393E46;" display="grid">
+    <ul class="horizontal">
+      <li class="nav-item active"><a href="/acceuil">Acceuil</a></li>
+      <li class="nav-item active"><a href="/static/login.html">Se connecter</a></li>
+      <li class="nav-item active"><a href="/static/index.html">S'inscrire</a></li>
+      <li class="nav-item active"><a href="/account">Mon compte</a></li>
+      <li class="nav-item active"><a href="/blog">Mes posts</a></li>
+      <li class="nav-item active"><a href="/static/post.html">Ecrire un post</a></li>
+
+    </ul> 
+    <div>
+      <form action="/post/edit" method="POST">
+	<label>Titre du post</label><input name="Title" type="text" value={{.Title}} />
+	<label>Texte du post</label><input name="address" type="text" value={{.Textpost}} />
+	<label>Date et heure de création</label><input name="CreationTime" type="int" value={{.CreationTime}} />
+      </form>
+      <button class="bouton" onclick="location.href = 'https://blogotin.fr/static/account';">Mon compte</button>
+    </div>
+  </body>
+</html>
+{{end}}
+

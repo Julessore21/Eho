@@ -1,0 +1,11 @@
+{{define "id"}}<!DOCTYPE html>
+
+{{range .Post}}
+	<div>
+	{{ . }}
+	</div>
+{{else}}
+	<div>
+	<strong>no rows</strong>
+	</div>
+{{end}}

@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Site Web statique</title>
+  <head>
+    <body>
+      <h2>BIENVENUE !</h2>
+      <div>
+	<form method="GET" action="/index.html">
+	  <label>Nom d'utilisateur</label><input name="name" type="text" value=name />
+	  <label>Mot de passe</label><input name="mdp" type="text" value="" />
+	  <label>Addresse</label><input name="address" type="text" value="" />
+	  <label>Numéro de téléphone</label><input name="phone" type="int" value="" />
+	  <label>Addresse Email</label><input name="mail" type="text" value="" />
+	  <label>Date de naissance</label><input name="birth" type="int" value="" />
+	  <input type="submit" value="Confirmer la modification" />
+	</form>
+      </div>
+    </body>
+</html>
+

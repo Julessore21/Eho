@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Site Web statique</title>
+    <link rel="stylesheet" href="style.css">
+  <head>
+    <body style="background-color:#393E46;">
+      <ul class="horizontal">
+	<li class="nav-item active"><a href="/acceuil">Acceuil</a></li>
+	<li class="nav-item active"><a href="/static/login.html">Se connecter</a></li>
+	<li class="nav-item active"><a href="/static/index.html">S'inscrire</a></li>
+	<li class="nav-item active"><a href="/account">Mon compte</a></li>
+	<li class="nav-item active"><a href="/blog">Mes posts</a></li>
+	<li class="nav-item active"><a href="/static/post.html">Ecrire un post</a></li>
+      </ul>
+      <div>
+	<form method="POST" action="/static/index.html">
+	  <label></label><input name="name" type="text" value="Nom d'utilisateur" />
+	  <label></label><input name="mdp" type="text" value="Mot de passe" />
+	  <label></label><input name="mdpconfirm" type="text" value="Confirmez le Mot de passe" />
+	  <label></label><input name="address" type="text" value="Addresse" />
+	  <label></label><input name="phone" type="int" value="Numéro de téléphone" />
+	  <label></label><input name="mail" type="text" value="Addresse Email" />
+	  <label></label><input name="birth" type="int" value="Date de naissance" />
+	  <input type="submit" value="S'inscrire" />
+	</form>
+      </div>
+    </body>
+</html>

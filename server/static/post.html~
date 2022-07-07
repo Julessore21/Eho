@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site Web statique</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color:#393E46;" display="grid">
+    <ul class="horizontal">
+      <li class="nav-item active"><a href="/static/login.html">Acceuil</a></li>
+      <li class="nav-item active"><a href="/static/login.html">Se connecter</a></li>
+      <li class="nav-item active"><a href="/static/index.html">S'inscrire</a></li>
+      <li class="nav-item active"><a href="/account">Mon compte</a></li>
+      <li class="nav-item active"><a href="/blog">Mes posts</a></li>
+      <li class="nav-item active"><a href="/static/post.html">Ecrire un post</a></li>
+
+    </ul>
+    <div>
+      <form action="/post" method="POST">
+	<label></label><input name="title" type="text" value="Titre de votre post :" />
+	<label></label><input name="textpost" type="text" value="Ecrivez votre nouveau post :" />
+	<input type="submit" value="Confirmer le post" />
+      </form>
+      <input type="submit" onclick="location.href = 'https://blogotin.fr/blog';" value="Mon blog"/>
+    </div>
+  </body>
+</html>

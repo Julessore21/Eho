@@ -1,0 +1,107 @@
+
+body {
+  
+    align-self: center;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Righteous", cursive;
+    min-height: 100vh;
+    background-color: #08D9D6;
+    background-image: linear-gradient(180deg, #252A34 0%, #EAEAEA 100%);
+}
+
+form {
+    margin-left:auto;
+}
+textarea[id=story] {
+     margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 300px;
+    background: #EAEAEA;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+
+
+input[type=text] {
+     margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 75px;
+    background: #EAEAEA;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+input[type=int] {
+     margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 75px;
+    background: #EAEAEA;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+input[type=submit] {
+    background-image: linear-gradient(to right, #08D9D6 0%, #96DEDA  51%, #08D9D6  100%);
+    margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    
+    
+}
+
+h2 {
+    font-size: 2em;
+}
+
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    paddin: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+ul.horizontal li {
+    float: left;
+}
+
+ul.horizontal li a.active{
+    background-color: #EEEEEE;
+}
+
+ul.horizontal li a {
+    display: inline-block;
+    color: #EEE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
